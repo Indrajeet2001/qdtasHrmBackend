@@ -14,13 +14,13 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .resourceChain(false);
     }
 
-    @Override
-    public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-                .allowedOrigins("http://localhost:4200") // Adjust this according to your front-end URL
-                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                .allowedHeaders("*")
-                .allowCredentials(true);
-    }
+//    @Override
+//    public void addCorsMappings(CorsRegistry registry) {
+//        registry.addMapping("/**")
+//                .allowedOrigins("http://localhost:4200") // Adjust this according to your front-end URL
+//                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+//                .allowedHeaders("*")
+//                .allowCredentials(true);
+//    }
 
 }
